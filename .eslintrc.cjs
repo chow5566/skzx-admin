@@ -6,9 +6,14 @@ module.exports = {
   'extends': [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
-    '@vue/eslint-config-prettier/skip-formatting'
+    '@vue/eslint-config-prettier/skip-formatting',
+    './.eslintrc-auto-import.json'
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    'vue/require-default-prop': 'off',
+    'vue/multi-word-component-names': 'off'
   }
 }

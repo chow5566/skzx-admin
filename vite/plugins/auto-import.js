@@ -7,6 +7,9 @@ export default function createAutoImport() {
     autoImport({
       imports: ['vue', 'vue-router', 'pinia'],
       dts: false,
+      eslintrc: {
+        enabled: true
+      },
       resolvers: [ElementPlusResolver()]
     }),
     Components({
